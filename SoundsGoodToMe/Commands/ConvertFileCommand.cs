@@ -14,7 +14,7 @@ namespace SoundsGoodToMe.Commands
     [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
     public class ConvertFileCommand : ConvertCommandBase
     {
-        [CommandOption("path", 'p', IsRequired = true, Description = "Font used for text overlay.")]
+        [CommandOption("path", 'p', IsRequired = true, Description = "Path used for pre-existing file to overlay")]
         public string Path { get; init; }
         
         public override async ValueTask ExecuteAsync(IConsole console)

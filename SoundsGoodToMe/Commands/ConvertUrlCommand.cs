@@ -15,7 +15,7 @@ namespace SoundsGoodToMe.Commands
     [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
     public class ConvertUrlCommand : ConvertCommandBase
     {
-        [CommandOption("url", 'u', IsRequired = true, Description = "Font used for text overlay.")]
+        [CommandOption("url", 'u', IsRequired = true, Description = "Url used to fetch gif")]
         public string Url { get; init; }
 
         public override async ValueTask ExecuteAsync(IConsole console)
