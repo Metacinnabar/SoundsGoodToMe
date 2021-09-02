@@ -9,7 +9,7 @@
 
 **Command line program to overlay "Sounds Good To Me" on a provided gif.**
 
-**Built with [CliFx](https://github.com/Tyrrrz/CliFx) and [SpectreConsole](https://github.com/spectreconsole/spectre.console).**
+**Built with [CliFx](https://github.com/Tyrrrz/CliFx), [SpectreConsole](https://github.com/spectreconsole/spectre.console) and [ImageSharp](https://github.com/SixLabors/ImageSharp).**
 
 ![sgtm_1630582259481](https://user-images.githubusercontent.com/45357714/131836454-68e9c9dc-e2f5-48c4-84de-5277c4c38c25.gif)
 
