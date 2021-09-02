@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
 using System.Threading.Tasks;
 using CliFx;
 using CliFx.Attributes;
@@ -14,9 +15,9 @@ namespace SoundsGoodToMe.Commands
         [CommandOption("font", 'f', Description = "Font used for text overlay.")]
         public string Font { get; init; } = "Ubuntu";
         
-        // default /home/charlie/sgtm/output or C:\Users\Charlie\sgtm\output
+        // default /home/charlie/sgtm-output/ or C:\Users\Charlie\sgtm-output\
         [CommandOption("outputdir", 'o', Description = "Output directory for the converted images.")]
-        public string OutputDirectory { get; init; } = Environment.GetEnvironmentVariable("userprofile");
+        public string OutputDirectory { get; init; } = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "sgtm-output");
         
         [CommandOption("color", 'c', Description = "Color used for text overlay.")]
         public string TextColor { get; init; } = "#FFFFFF";
