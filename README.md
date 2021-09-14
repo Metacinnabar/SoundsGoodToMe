@@ -21,6 +21,7 @@
     - [Customizable Output Directory](#customizable-output-directory)
     - [Customizable Font](#customizable-font)
     - [Customizable Text Color](#customizable-text-color)
+    - [Customizable Acronyms](#customizable-acronyms)
 - [Setup](#setup)
 - [Commands](#commands)
     - [ConvertUrl](#converturl)
@@ -66,6 +67,13 @@ Default font is Arial. If you are getting errors with the default font, make sur
 ### Customizable Text Color
 Change the text color used to draw text with the `--color` or `-c` switch.
 Default color is #FFFFFF (White). Make sure this color is a hex value.
+
+![image](https://user-images.githubusercontent.com/45357714/131814904-4ae06504-8dc2-4ba0-8b02-e4bba79faf80.png)
+
+### Customizable Acronyms
+Change the abbreviated text with the `--abbreviated-text` or `-a` switch.
+Change the unabbreviated text with the `--expanded-text` or `-e` switch.
+Default abbreviation is "SGTM", default unabbreviation is "Sounds Good To Me".
 
 ![image](https://user-images.githubusercontent.com/45357714/131814904-4ae06504-8dc2-4ba0-8b02-e4bba79faf80.png)
 
