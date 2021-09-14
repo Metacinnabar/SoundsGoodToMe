@@ -21,6 +21,7 @@
     - [Customizable Output Directory](#customizable-output-directory)
     - [Customizable Font](#customizable-font)
     - [Customizable Text Color](#customizable-text-color)
+    - [Customizable Acronyms](#customizable-acronyms)
 - [Setup](#setup)
 - [Commands](#commands)
     - [ConvertUrl](#converturl)
@@ -69,6 +70,13 @@ Default color is #FFFFFF (White). Make sure this color is a hex value.
 
 ![image](https://user-images.githubusercontent.com/45357714/131814904-4ae06504-8dc2-4ba0-8b02-e4bba79faf80.png)
 
+### Customizable Acronyms
+Change the abbreviated text with the `--abbreviated-text` or `-a` switch.
+Change the unabbreviated text with the `--expanded-text` or `-e` switch.
+Default abbreviation is "SGTM", default unabbreviation is "Sounds Good To Me".
+
+![image](https://user-images.githubusercontent.com/27323911/133201838-6fc85d8a-b3d1-448e-8f54-6f47f7cd3e74.png)
+
 ## Setup
 (Assuming [.NET Core 3.1](https://dotnet.microsoft.com/download) and an archive manager is installed)
 - Download the latest binary from the [releases](https://github.com/GoodPro712/SoundsGoodToMe/releases) page.
@@ -91,6 +99,8 @@ version | responds with the version the program is running on
 `--outputdir` or `-o` | `false` | output directory for the converted gifs
 `--font` or `-f` | `false` | font used for text overlay
 `--color` or `-c` | `false` | color used for text overlay
+`--abbreviated-text` or `-a` | `false` | the abbreviated text to display
+`--expanded-text` or `-e` | `false` | the unabbreviated text to display
 `--help` or `-h` | `false` | displays a help message on all switches
 
 ### ConvertFile
@@ -100,6 +110,8 @@ version | responds with the version the program is running on
 `--outputdir` or `-o` | `false` | output directory for the converted gifs
 `--font` or `-f` | `false` | font used for text overlay
 `--color` or `-c` | `false` | color used for text overlay
+`--abbreviated-text` or `-a` | `false` | the abbreviated text to display
+`--expanded-text` or `-e` | `false` | the unabbreviated text to display
 `--help` or `-h` | `false` | displays a help message on all switches
 
 ## Examples

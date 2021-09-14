@@ -19,6 +19,8 @@ namespace SoundsGoodToMe.Commands
         
         public override async ValueTask ExecuteAsync(IConsole console)
         {
+            Program.CurrentAcronym = SgtmAcronym;
+
             var filename = $"{DateTimeOffset.UtcNow.ToUnixTimeMilliseconds()}.gif";
             var filepath = System.IO.Path.Join(OutputDirectory, $"sgtm_{filename}");
 

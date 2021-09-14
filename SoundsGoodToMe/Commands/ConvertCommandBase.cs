@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CliFx;
 using CliFx.Attributes;
 using CliFx.Infrastructure;
+using SoundsGoodToMe.DataStructures;
 
 namespace SoundsGoodToMe.Commands
 {
@@ -21,6 +22,15 @@ namespace SoundsGoodToMe.Commands
 
         [CommandOption("color", 'c', Description = "Color used for text overlay.")]
         public string TextColor { get; init; } = "#FFFFFF";
+
+        [CommandOption("abbreviated-text", 'a', Description = "The abbreviated text to display.")]
+        public string AbbreviatedText { get; init; } = Program.DefaultAbbreviation;
+
+        [CommandOption("expanded-text", 'e', Description = "The unabbreviated text to display.")]
+        public string ExpandedText { get; init; } = Program.DefaultExpanded;
+
+        public Acronym SgtmAcronym => new(AbbreviatedText, ExpandedText);
+
         public abstract ValueTask ExecuteAsync(IConsole console);
     }
 }
