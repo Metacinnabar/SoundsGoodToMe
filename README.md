@@ -99,6 +99,8 @@ version | responds with the version the program is running on
 `--outputdir` or `-o` | `false` | output directory for the converted gifs
 `--font` or `-f` | `false` | font used for text overlay
 `--color` or `-c` | `false` | color used for text overlay
+`--abbreviated-text` or `-a` | `false` | the abbreviated text to display
+`--expanded-text` or `-e` | `false` | the unabbreviated text to display
 `--help` or `-h` | `false` | displays a help message on all switches
 
 ### ConvertFile
@@ -108,6 +110,8 @@ version | responds with the version the program is running on
 `--outputdir` or `-o` | `false` | output directory for the converted gifs
 `--font` or `-f` | `false` | font used for text overlay
 `--color` or `-c` | `false` | color used for text overlay
+`--abbreviated-text` or `-a` | `false` | the abbreviated text to display
+`--expanded-text` or `-e` | `false` | the unabbreviated text to display
 `--help` or `-h` | `false` | displays a help message on all switches
 
 ## Examples
