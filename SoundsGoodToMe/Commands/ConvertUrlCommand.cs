@@ -34,16 +34,21 @@ namespace SoundsGoodToMe.Commands
 
             if (!Directory.Exists(OutputDirectory))
                 Directory.CreateDirectory(OutputDirectory);
-            
-            await ConsoleUtils.AsyncProgressBar(ansiConsole, "Downloading gif", async task =>
-                await NetUtils.DownloadGifWithProgressBar(ansiConsole, new HttpClient(), task, tempFilePath, Url));
 
-            await ConsoleUtils.AsyncStatus(ansiConsole, "Converting gif", () =>
-                ImageUtils.AsyncConvertImage(tempFilePath, finalFilePath, Font, TextColor));
-            ansiConsole.MarkupLine($"Image conversion of [u]{finalFilePath}[/] [green]completed![/]");
+            try
+            {
+                await ConsoleUtils.AsyncProgressBar(ansiConsole, "Downloading gif", async task =>
+                    await NetUtils.DownloadGifWithProgressBar(ansiConsole, new HttpClient(), task, tempFilePath, Url));
 
-            File.Delete(tempFilePath);
-            ansiConsole.MarkupLine($"Temp gif deletion of [u]{tempFilePath}[/] [green]completed![/]");
+                await ConsoleUtils.AsyncStatus(ansiConsole, "Converting gif", () =>
+                    ImageUtils.AsyncConvertImage(tempFilePath, finalFilePath, Font, TextColor));
+                ansiConsole.MarkupLine($"Image conversion of [u]{finalFilePath}[/] [green]completed![/]");
+            }
+            finally
+            {
+                File.Delete(tempFilePath);
+                ansiConsole.MarkupLine($"Temp gif deletion of [u]{tempFilePath}[/] [green]completed![/]");
+            }
         }
     }
 }
