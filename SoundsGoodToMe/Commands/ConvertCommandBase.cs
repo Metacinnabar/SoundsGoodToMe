@@ -23,17 +23,17 @@ namespace SoundsGoodToMe.Commands
         [CommandOption("color", 'c', Description = "Color used for text overlay.")]
         public string TextColor { get; init; } = "#FFFFFF";
 
-        [CommandOption("abbreviated-text", Description = "The abbreviated text to display.")]
+        [CommandOption("abbreviated-text", 'a', Description = "The abbreviated text to display.")]
         public string AbbreviatedText { get; init; } = Program.DefaultAbbreviation;
 
-        [CommandOption("expanded-text", Description = "The unabbreviated text to display.")]
+        [CommandOption("expanded-text", 'e', Description = "The unabbreviated text to display.")]
         public string ExpandedText { get; init; } = Program.DefaultExpanded;
 
 
-        [CommandOption("abbreviated-size", Description = "The abbreviated font size.")]
+        [CommandOption("abbreviated-size", 'A', Description = "The abbreviated font size.")]
         public int AbbreviatedSize { get; init; } = Program.DefaultAbbreviatedSize;
 
-        [CommandOption("expanded-size", Description = "The unabbreviated font size.")]
+        [CommandOption("expanded-size", 'E', Description = "The unabbreviated font size.")]
         public int ExpandedSize { get; init; } = Program.DefaultExpandedSize;
 
         public Acronym SgtmAcronym => new(AbbreviatedText, ExpandedText, AbbreviatedSize, ExpandedSize);
