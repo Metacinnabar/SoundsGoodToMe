@@ -6,8 +6,15 @@ namespace SoundsGoodToMe
 {
     public static class Program
     {
-        // Struct abuse :sunglasses:
-        public static Acronym SgtmAcronym = new("SGTM", "Sounds Good To Me", 70, 30);
+        public const string DefaultAbbreviation = "SGTM";
+        public const string DefaultExpanded = "Soungs Good To Me";
+        public const int DefaultAbbreviatedSize = 70;
+        public const int DefaultExpandedSize = 30;
+
+        // Default value set in the static constructor.
+        // This will actually be modified by either conversion command.
+        public static Acronym CurrentAcronym = new(DefaultAbbreviation, DefaultExpanded,
+            DefaultAbbreviatedSize, DefaultExpandedSize);
 
         public static async Task<int> Main()
         {
