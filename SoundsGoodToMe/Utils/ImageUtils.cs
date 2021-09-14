@@ -18,13 +18,13 @@ namespace SoundsGoodToMe.Utils
             var color = Color.FromRgba(sysDrawColor.R, sysDrawColor.G, sysDrawColor.B, sysDrawColor.A);
             
             using var img = await Image.LoadAsync(filePath);
-            using var imageAcronym = DrawText(img, Program.CurrentAcronym.Abbreviated, font, Program.CurrentAcronym.AbbreviatedFontSize, color, true);
-            using var imageFull = DrawText(imageAcronym, Program.CurrentAcronym.Expanded, font, Program.CurrentAcronym.ExpandedFontSize, color, false);
+            using var imageAcronym = DrawText(img, Program.CurrentAcronym.Abbreviated, font, 70f, color, true);
+            using var imageFull = DrawText(imageAcronym, Program.CurrentAcronym.Expanded, font, 30f, color, false);
 
             await imageFull.SaveAsync(outputPath);
         }
 
-        private static Image DrawText(Image oldImage, string text, string fontName, int fontSize, Color color, bool isAbbreviated)
+        private static Image DrawText(Image oldImage, string text, string fontName, float fontSize, Color color, bool isAbbreviated)
         {
             var imageSize = oldImage.Size();
             var font = SystemFonts.CreateFont(fontName, fontSize);

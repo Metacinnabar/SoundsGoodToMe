@@ -29,14 +29,7 @@ namespace SoundsGoodToMe.Commands
         [CommandOption("expanded-text", 'e', Description = "The unabbreviated text to display.")]
         public string ExpandedText { get; init; } = Program.DefaultExpanded;
 
-
-        [CommandOption("abbreviated-size", 'A', Description = "The abbreviated font size.")]
-        public int AbbreviatedSize { get; init; } = Program.DefaultAbbreviatedSize;
-
-        [CommandOption("expanded-size", 'E', Description = "The unabbreviated font size.")]
-        public int ExpandedSize { get; init; } = Program.DefaultExpandedSize;
-
-        public Acronym SgtmAcronym => new(AbbreviatedText, ExpandedText, AbbreviatedSize, ExpandedSize);
+        public Acronym SgtmAcronym => new(AbbreviatedText, ExpandedText);
 
         public abstract ValueTask ExecuteAsync(IConsole console);
     }
