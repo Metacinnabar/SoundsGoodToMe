@@ -75,7 +75,7 @@ Change the abbreviated text with the `--abbreviated-text` or `-a` switch.
 Change the unabbreviated text with the `--expanded-text` or `-e` switch.
 Default abbreviation is "SGTM", default unabbreviation is "Sounds Good To Me".
 
-![image](https://user-images.githubusercontent.com/45357714/131814904-4ae06504-8dc2-4ba0-8b02-e4bba79faf80.png)
+![image](https://user-images.githubusercontent.com/27323911/133201838-6fc85d8a-b3d1-448e-8f54-6f47f7cd3e74.png)
 
 ## Setup
 (Assuming [.NET Core 3.1](https://dotnet.microsoft.com/download) and an archive manager is installed)
