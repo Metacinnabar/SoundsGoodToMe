@@ -1,6 +1,6 @@
 # Overview
 [![wakatime](https://wakatime.com/badge/github/Metacinnabar/SoundsGoodToMe.svg)](https://wakatime.com/badge/github/Metacinnabar/SoundsGoodToMe)
-[![CodeFactor](https://www.codefactor.io/repository/github/Metacinnabar/soundsgoodtome/badge)](https://www.codefactor.io/repository/github/Metacinnabar/soundsgoodtome)
+[![CodeFactor](https://www.codefactor.io/repository/github/Metacinnabar/SoundsGoodToMe/badge)](https://www.codefactor.io/repository/github/Metacinnabar/SoundsGoodToMe)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Metacinnabar/soundsgoodtome)
 ![Lines of code](https://img.shields.io/tokei/lines/github/Metacinnabar/soundsgoodtome)
 ![GitHub](https://img.shields.io/github/license/Metacinnabar/soundsgoodtome)
@@ -79,7 +79,7 @@ Default abbreviation is "SGTM", default unabbreviation is "Sounds Good To Me".
 
 ## Setup
 (Assuming [.NET Core 3.1](https://dotnet.microsoft.com/download) and an archive manager is installed)
-- Download the latest binary from the [releases](https://github.com/GoodPro712/SoundsGoodToMe/releases) page.
+- Download the latest binary from the [releases](https://github.com/Metacinnabar/SoundsGoodToMe/releases) page.
 - Extract the binary with your favourite archive manager (Mine being [7zip](https://www.7-zip.org/)).
 - Open a terminal window in the directory the folder was extracted to
 - Type `dotnet SoundsGoodToMe.dll --help` and follow the help message.
@@ -136,7 +136,7 @@ dotnet SoundsGoodToMe.dll convertfile -h
 ```
 
 ## Support
-For any bug reports, questions, or requests, create an issue via the [issue tracker](https://github.com/GoodPro712/SoundsGoodToMe/issues).
+For any bug reports, questions, or requests please create an issue via the [issue tracker](https://github.com/Metacinnabar/SoundsGoodToMe/issues).
 
 ## License
-SoundsGoodToMe is released under the [MIT License](https://github.com/GoodPro712/SoundsGoodToMe/blob/master/LICENSE).
+SoundsGoodToMe is released under the [MIT License](https://github.com/Metacinnabar/SoundsGoodToMe/blob/master/LICENSE).
