@@ -1,11 +1,11 @@
 # Overview
-[![wakatime](https://wakatime.com/badge/github/GoodPro712/SoundsGoodToMe.svg)](https://wakatime.com/badge/github/GoodPro712/SoundsGoodToMe)
-[![CodeFactor](https://www.codefactor.io/repository/github/goodpro712/soundsgoodtome/badge)](https://www.codefactor.io/repository/github/goodpro712/soundsgoodtome)
-![GitHub repo size](https://img.shields.io/github/repo-size/goodpro712/soundsgoodtome)
-![Lines of code](https://img.shields.io/tokei/lines/github/goodpro712/soundsgoodtome)
-![GitHub](https://img.shields.io/github/license/goodpro712/soundsgoodtome)
-![GitHub last commit](https://img.shields.io/github/last-commit/goodpro712/soundsgoodtome)
-![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/goodpro712/soundsgoodtome?include_prereleases&sort=semver)
+[![wakatime](https://wakatime.com/badge/github/Metacinnabar/SoundsGoodToMe.svg)](https://wakatime.com/badge/github/Metacinnabar/SoundsGoodToMe)
+[![CodeFactor](https://www.codefactor.io/repository/github/Metacinnabar/soundsgoodtome/badge)](https://www.codefactor.io/repository/github/Metacinnabar/soundsgoodtome)
+![GitHub repo size](https://img.shields.io/github/repo-size/Metacinnabar/soundsgoodtome)
+![Lines of code](https://img.shields.io/tokei/lines/github/Metacinnabar/soundsgoodtome)
+![GitHub](https://img.shields.io/github/license/Metacinnabar/soundsgoodtome)
+![GitHub last commit](https://img.shields.io/github/last-commit/Metacinnabar/soundsgoodtome)
+![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/Metacinnabar/soundsgoodtome?include_prereleases&sort=semver)
 
 **Command line program to overlay "Sounds Good To Me" on a provided gif.**
 
